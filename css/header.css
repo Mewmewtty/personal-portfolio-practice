@@ -1,6 +1,9 @@
 header {
-    background-color: var(--main-brand-color);
-    width: 100%;
+    background-color: var(--header-color);
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(179,168,145,0.5);
+    -moz-box-shadow: 0px 4px 6px 0px rgba(179,168,145,0.5);
+    box-shadow: 0px 4px 6px 0px rgba(179,168,145,0.5);
+
     position: sticky;
     z-index: 999;
     top: 0;
@@ -18,7 +21,7 @@ header {
     text-align: center;
 }
 .header-logo img {
-    height: 40px;
+    height: 30px;
 }
 .main-nav {
     float: right;
@@ -29,18 +32,28 @@ header {
 }
 .main-menu-item {
     list-style: none;
-    
+    position: relative;  
+}
+.main-menu-item:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    background-color: var(--main-brand-color);
+    animation: slide-reverse 1s linear;
+}
+.main-menu-item:hover:after {
+    width: 30px;
+    animation: slide 1s linear;
 }
 .main-menu-item a {
+    font-family: 'Montserrat', sans-serif;
     color: var(--secondary-bg-color);
-    font-size: 22px;
     text-decoration: none;
     font-size: 14px;
     line-height: 14px;
-    font-weight: 500;
-}
-.main-menu-item a:hover {
-    color: var(--main-brand-color-light);
+    font-weight: 600;
 }
 
 @media (min-width: 769px) {
@@ -53,7 +66,7 @@ header {
         text-align: left;
     }
     .header-logo img {
-        height: 70px;
+        height: 60px;
     }
     .main-menu {
         height: 100%;
@@ -64,9 +77,5 @@ header {
         justify-content: flex-end;
         align-items: center;
         gap: 30px;
-    }
-    .main-menu-item a {
-        font-size: 16px;
-        line-height: 16px;
     }
 }

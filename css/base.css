@@ -1,18 +1,87 @@
 :root {
-    --main-text-color: #141414;
-    --main-bg-color: #f5f5f5;
+    --main-text-color: #353535;
+    --main-bg-color: #F0F0F0;
     --secondary-bg-color: #0f0f0f;
     --main-brand-color: #FFDE5B;
-    --main-brand-color-light: #E52029;
-    font-size: 16px;
+    --header-color: #FFFFFF;
+    --main-brand-color-light: #FF5154;
+    font-size: 14px;
+    line-height: 24px;
     font-family: 'Roboto', sans-serif;
-  }
+}
   
-  .main-bg {
+body {
     color: var(--main-text-color);
     background-color: var(--main-bg-color);
-  }
+}
   
-  * {
+* {
     box-sizing: border-box;
-  }
+}
+
+.wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+@keyframes slide {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 30px;
+    }
+}
+@keyframes slide-reverse {
+    0% {
+        width: 30px;
+    }
+    100% {
+        width: 0px;
+    }
+}
+
+strong {
+    font-weight: 600;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+@media (min-width: 769px) {
+    :root {
+        font-size: 15px;
+        line-height: 26px;
+    }
+    h1 {
+        font-size: 28px;
+        line-height: 30px;
+    }
+    
+    .subtitle {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
