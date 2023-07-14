@@ -28,10 +28,18 @@
     text-align: center;
     padding: 20px 0;
 }
+.skills .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
 .skills h2 {
     text-align: center;
     position: relative;
     display: inline-block;
+    margin-bottom: 40px;
 }
 .skills h2:after {
     content: "";
@@ -45,8 +53,15 @@
     background-color: var(--main-brand-color);
     animation: slide 1s linear;
 }
-
+@media (min-width: 520px) {
+    /* Skills */
+    .skills .wrap {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 @media (min-width: 769px) {
+    /* Description */
     .description {
         display: flex;
         flex-direction: row;
