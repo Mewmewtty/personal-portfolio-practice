@@ -1,6 +1,6 @@
 .main {
     margin: 0 auto;
-    padding: 40px 0px;
+    padding: 40px 0px 0px 0px;
 }
 /* Description */
 .description {
@@ -26,7 +26,7 @@
     width: 100%;
     background-color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 60px 0;
 }
 .skills .wrap {
     display: flex;
@@ -53,11 +53,25 @@
     background-color: var(--main-brand-color);
     animation: slide 1s linear;
 }
+/* Banner */
+.banner {
+    background-image: url("../assets/shin-chan-banner-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 500px;
+    width: 100%;
+}
 @media (min-width: 520px) {
     /* Skills */
     .skills .wrap {
         flex-direction: row;
         justify-content: space-between;
+    }
+    /* Banner */
+    .banner {
+        background-image: url("../assets/shin-chan-banner.jpg");
+        background-position: top right;
     }
 }
 @media (min-width: 769px) {
