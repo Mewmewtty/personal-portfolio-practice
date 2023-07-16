@@ -1,0 +1,38 @@
+.header-page {
+    background-size: cover;
+    background-position: 100% 45%;
+    padding: 60px 10px;
+}
+.header-contact {
+    background-image: url("../assets/banner-shin-chan.jpg");
+}
+.form-contact form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.form-contact {
+    padding: 50px 10px;
+    background-color: var(--main-bg-color);
+}
+.form-contact .btn {
+    width: 49%;
+    margin-bottom: 10px;
+}
+.form-contact .btn--secondary {
+    width: 49%;
+    margin-bottom: 10px;
+}
+.form__btns {
+    width: 100%;
+}
+
+@media (min-width: 481px) {
+    .form__btns {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .form-contact .btn {
+        width: 150px;
+    }
+}

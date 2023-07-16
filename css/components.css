@@ -1,3 +1,4 @@
+/* Skill progress bar */
 .skill {
     width: 100%;
     text-align: left;
@@ -69,5 +70,109 @@
 @media (min-width: 769px) {
     .skill {
         width: 30%;
+    }
+}
+
+/* Buttons */
+.btn {
+    color: var(--main-text-color);
+    background-color: var(--main-brand-color);
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid var(--main-brand-color);
+    transition: background-color 0.1s linear;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: var(--secondary-brand-color);
+    border: 1px solid var(--secondary-brand-color);
+    color: #FFF;
+}
+.btn.btn--secondary {
+    background-color: transparent;
+    border-color: var(--main-text-color);
+}
+.btn.btn--secondary:hover {
+    background-color: var(--secondary-brand-color);
+    border: 1px solid var(--secondary-brand-color);
+    color: #FFF;
+}   
+  
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+.form__element {
+    margin-bottom: 12px;
+}
+.form__element--checkbox {
+    flex-direction: row;
+    align-items: center;
+}
+.form__element--checkbox input[type="checkbox"] {
+     margin-right: 5px;
+}
+.form__label {
+    margin-bottom: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 100%;
+    position: relative;
+    padding-left: 20px;
+}
+.form__label:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    background-color: var(--main-brand-color);
+    left: 0;
+    top: 5px;
+}
+.form__input {
+    padding: 10px 15px;
+    border-radius: 25px;
+    background: #FFF;
+    border: 1px solid #FFF;
+    color: var(--main-text-color);
+    width: 100%;
+}
+.form__input:focus-visible {
+    outline: none;
+}
+.form__input:focus {
+    border-color: var(--main-brand-color-light);
+}
+fieldset {
+    border: 1px solid var(--main-text-color);
+}
+fieldset legend {
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+fieldset label {
+    width: 100%;
+}
+.fieldset__element {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form__textarea {
+    height: 120px;
+}
+textarea::placeholder, input::placeholder {
+  color: #cbcbcb;
+}
+
+
+@media (min-width: 481px) {
+    form {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .form__element {
+        width: 48%;
     }
 }

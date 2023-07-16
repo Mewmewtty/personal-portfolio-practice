@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shin Chan - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Portfolio Shin Chan">
+    <meta property="og:description" content="Vida y obra del personaje de animación Shinnosuke Nohara, de la serie Shin Chan.">
+    <meta property="og:image" content="https://github.com/KeepCodingWeb15/html-css/blob/main/assets/app/catalog.jpg?raw=true">
+    <meta property="twitter:card" content="summary">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrap">
+            <div class="header-logo"><img src="assets/Shin-Chan-logo.webp" alt="Logo Shin Chan" title="Shin Chan" /></div>
+            <nav class="main-nav">
+                <ul class="main-menu">
+                    <li class="main-menu-item"><a href="index.html">Inicio</a></li>
+                    <li class="main-menu-item"><a href="proyectos.html">Proyectos</a></li>
+                    <li class="main-menu-item active"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="main">
+        <section class="header-page header-contact">
+            <div class="wrap">
+                <h1 class="negative">Contacta conmigo</h1>
+            </div>     
+        </section>
+        <section class="form-contact">
+            <div class="wrap">
+                <form class="form" method="post" action="registro.html">
+                    <div class="form__element">
+                        <label class="form__label" for="nombre">Nombre</label>
+                        <input
+                            class="form__input"
+                            id="nombre"
+                            type="text"
+                            placeholder="Escribe tu nombre..."
+                            value=""
+                            name="nombre"
+                            required
+                        >
+                    </div>
+                    <div class="form__element">
+                        <label class="form__label" for="apellidos">Apellidos</label>
+                        <input
+                            class="form__input"
+                            id="apellidos"
+                            type="text"
+                            placeholder="Escribe tus apellidos..."
+                            value=""
+                            name="apellidos"
+                            required
+                        >
+                    </div>
+                    <div class="form__element">
+                        <label class="form__label" for="telefono">Teléfono</label>
+                        <input
+                            class="form__input"
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="Formato 600-000-0000..."
+                            title="Formato 600-000-0000"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            required
+                        >
+                    </div>
+                    <div class="form__element">
+                        <label class="form__label" for="githubtag">Tag de Github</label>
+                        <input
+                            class="form__input"
+                            id="githubtag"
+                            type="text"
+                            placeholder="Tag de Github..."
+                            value=""
+                            name="githubtag"
+                            pattern="^@[^\s]+"
+                            required
+                        >
+                    </div>
+                    <fieldset class="form__element">
+                        <legend>¿Cómo me conociste?</legend>
+                        <div>
+                            <div class="fieldset__element">
+                                <input type="radio" id="universidad" name="meet" checked value="universidad">
+                                <label for="universidad">Universidad</label>
+                            </div>
+                            <div class="fieldset__element">
+                                <input type="radio" id="keepcoding" name="meet" value="keepcoding">
+                                <label for="keepcoding">Keepcoding kick-off</label>
+                            </div>
+                            <div class="fieldset__element">
+                                <input type="radio" id="colegio" name="meet" value="colegio">
+                                <label for="colegio">Colegio</label>
+                            </div>
+                            <div class="fieldset__element">
+                                <input type="radio" id="github" name="meet" value="github">
+                                <label for="github">En Github</label>
+                            </div> 
+                        </div>
+                    </fieldset>
+                    <div class="form__element">
+                        <label class="form__label" for="info">Más info sobre ti</label>
+                        <textarea class="form__input form__textarea" name="info" id="info" placeholder="Más info sobre ti..." required maxlength="180"></textarea>
+                    </div>
+                    <div class="form__element form__element--checkbox">
+                        <input type="checkbox" name="newsletter" id="newsletter" checked>
+                        <label for="newsletter">Suscribirme a la newsletter</label>
+                    </div>
+                    <div class="form__btns">
+                        <button class="btn btn--secondary" type="reset">Reset</button>
+                        <input class="btn" type="submit" value="Enviar">
+                    </div>                    
+                </form>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-wrap">
+            <ul class="social-icons">
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/marta-camp/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>
