@@ -3,6 +3,7 @@ Creation of a simple portfolio for the anime character Shin Chan. In this projec
 It is an example of a portfolio consisting of 3 pages: skills, projects and contact.
 
 ## Project structure
+```
 > index.html
 > contacto.html
 > proyectos.html
@@ -16,3 +17,4 @@ It is an example of a portfolio consisting of 3 pages: skills, projects and cont
           footer.css
 
 > assets
+```
